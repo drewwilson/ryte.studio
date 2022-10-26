@@ -11,14 +11,14 @@
       }
       body {
         display: grid;
-        overflow: hidden;
+        overflow-x: hidden;
       }
       .logo {
         position: absolute;
         top: 60px;
-        right: 60px;
-        width: 42px;
-        height: 19px;
+        right: 80px;
+        width: 67px;
+        height: 31px;
         z-index: 0;
       }
       .big-logo {
@@ -26,10 +26,11 @@
         transform: rotate(90deg);
         z-index: 0;
         height: 800px;
-        left: -220px;
+        left: -255px;
         width: 800px;
         top: 15%;
-        margin-top: -10%;
+        margin-top: -60px;
+        opacity: 0.4;
       }
       .tagline {
         display: grid;
@@ -56,6 +57,31 @@
           width: 700px;
           top: 10%;
           margin-top: -10%;
+        }
+        .logo {
+          right: 40px;
+        }
+        .tagline {
+          font-size: 85px;
+          padding-right: 0px;
+          padding-left: 30px;
+        }
+      }
+      @media only screen and (max-width: 500px) {
+        .tagline {
+          font-size: 75px;
+        }
+      }
+      @media only screen and (max-width: 400px) {
+        .big-logo {
+          height: 600px;
+          left: -250px;
+          width: 600px;
+          top: 10%;
+          margin-top: -10%;
+        }
+        .logo {
+          right: 20px;
         }
         .tagline {
           font-size: 65px;
